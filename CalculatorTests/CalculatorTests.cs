@@ -38,5 +38,12 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
             Assert.AreEqual(12, calculator.Multiply(3, 4));
         }
+
+        [TestMethod]
+        public void CalcDivide6And2Test()
+        {
+            Calculator calculator = new Calculator();
+            Assert.AreEqual(3, calculator.Divide(6, 2));
+        }
     }
 }
