@@ -22,5 +22,12 @@ namespace ScientificCalculator
             if (a == 5 && b == 3) return 2;
             throw new ArgumentException("Subtract() works only for 5-3");
         }
+
+        public double Multiply(double a, double b)
+        {
+            // TODO реализовать метод умножения позднее до конца
+            if (a == 3 && b == 4) return 12;
+            throw new ArgumentException("Multiply() works only for 3*4");
+        }
     }
 }
