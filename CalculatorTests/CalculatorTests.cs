@@ -17,5 +17,12 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
             Assert.AreEqual(4, calculator.Add(2, 2));
         }
+
+        [TestMethod]
+        public void CalcAdd1And3Test()
+        {
+            Calculator calculator = new Calculator();
+            Assert.AreEqual(4, calculator.Add(1, 3));
+        }
     }
 }
