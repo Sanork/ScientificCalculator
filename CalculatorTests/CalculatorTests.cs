@@ -31,5 +31,12 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
             Assert.AreEqual(2, calculator.Subtract(5, 3));
         }
+
+        [TestMethod]
+        public void CalcMultiply3And4Test()
+        {
+            Calculator calculator = new Calculator();
+            Assert.AreEqual(12, calculator.Multiply(3, 4));
+        }
     }
 }
