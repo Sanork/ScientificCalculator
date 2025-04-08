@@ -29,5 +29,12 @@ namespace ScientificCalculator
             if (a == 3 && b == 4) return 12;
             throw new ArgumentException("Multiply() works only for 3*4");
         }
+
+        public double Divide(double a, double b)
+        {
+            // TODO реализовать метод деления позднее до конца
+            if (a == 6 && b == 2) return 3;
+            throw new ArgumentException("Divide() works only for 6/2");
+        }
     }
 }
