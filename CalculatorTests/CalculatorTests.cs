@@ -24,5 +24,12 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
             Assert.AreEqual(4, calculator.Add(1, 3));
         }
+
+        [TestMethod]
+        public void CalcSubtract5And3Test()
+        {
+            Calculator calculator = new Calculator();
+            Assert.AreEqual(2, calculator.Subtract(5, 3));
+        }
     }
 }
