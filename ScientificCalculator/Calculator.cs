@@ -36,5 +36,12 @@ namespace ScientificCalculator
             if (a == 6 && b == 2) return 3;
             throw new ArgumentException("Divide() works only for 6/2");
         }
+
+        public double SolveEquation(string equation)
+        {
+            // TODO реализовать метод уравнения позднее до конца
+            if (equation == "x + 2 = 5") return 3;
+            throw new ArgumentException("SolveEquation() works only for 'x + 2 = 5'");
+        }
     }
 }
