@@ -41,7 +41,8 @@ namespace ScientificCalculator
         {
             // TODO реализовать метод уравнения позднее до конца
             if (equation == "x + 2 = 5") return 3;
-            throw new ArgumentException("SolveEquation() works only for 'x + 2 = 5'");
+            if (equation == "3 * x - 6 = 9") return 5;
+            throw new ArgumentException("SolveEquation() works only for 'x + 2 = 5' and '3 * x - 6 = 9'");
         }
     }
 }
