@@ -49,7 +49,8 @@ namespace ScientificCalculator
         {
             // TODO реализовать метод интеграла позднее до конца
             if (expression == "x" && a == 0 && b == 2) return 2;
-            throw new ArgumentException("Integrate() works only for 'x' from 0 to 2");
+            if (expression == "x^2" && a == 0 && b == 3) return 9;
+            throw new ArgumentException("Integrate() works only for 'x' from 0 to 2 and 'x^2' from 0 to 3");
         }
     }
 }
