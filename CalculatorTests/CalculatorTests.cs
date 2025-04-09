@@ -52,5 +52,12 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
             Assert.AreEqual(3, calculator.SolveEquation("x + 2 = 5"));
         }
+
+        [TestMethod]
+        public void CalcSolveEquation_3xMinus6Equals9_Returns5()
+        {
+            Calculator calculator = new Calculator();
+            Assert.AreEqual(5, calculator.SolveEquation("3 * x - 6 = 9"));
+        }
     }
 }
