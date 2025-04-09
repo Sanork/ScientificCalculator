@@ -45,5 +45,12 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
             Assert.AreEqual(3, calculator.Divide(6, 2));
         }
+
+        [TestMethod]
+        public void CalcSolveEquation_XPlus2Equals5_Returns3()
+        {
+            Calculator calculator = new Calculator();
+            Assert.AreEqual(3, calculator.SolveEquation("x + 2 = 5"));
+        }
     }
 }
