@@ -66,5 +66,12 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
             Assert.AreEqual(2, calculator.Integrate("x", 0, 2));
         }
+
+        [TestMethod]
+        public void CalcIntegrate_XSquaredFrom0To3_Returns9()
+        {
+            Calculator calculator = new Calculator();
+            Assert.AreEqual(9, calculator.Integrate("x^2", 0, 3));
+        }
     }
 }
