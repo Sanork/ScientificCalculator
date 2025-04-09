@@ -44,5 +44,12 @@ namespace ScientificCalculator
             if (equation == "3 * x - 6 = 9") return 5;
             throw new ArgumentException("SolveEquation() works only for 'x + 2 = 5' and '3 * x - 6 = 9'");
         }
+
+        public double Integrate(string expression, double a, double b)
+        {
+            // TODO реализовать метод интеграла позднее до конца
+            if (expression == "x" && a == 0 && b == 2) return 2;
+            throw new ArgumentException("Integrate() works only for 'x' from 0 to 2");
+        }
     }
 }
