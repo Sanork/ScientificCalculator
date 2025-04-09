@@ -59,5 +59,12 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
             Assert.AreEqual(5, calculator.SolveEquation("3 * x - 6 = 9"));
         }
+
+        [TestMethod]
+        public void CalcIntegrate_XFrom0To2_Returns2()
+        {
+            Calculator calculator = new Calculator();
+            Assert.AreEqual(2, calculator.Integrate("x", 0, 2));
+        }
     }
 }
